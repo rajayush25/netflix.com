@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap');
+body
+{
+    background-color: black;
+    color: white;
+}
+.header
+{
+    background-image:
+    linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+    url("https://cdn2.desidime.com/topics/photos/1286406/original/US-en-20210425-popsignuptwoweeks-perspective_alpha_website_small.jpg?1619807912");
+
+    display: grid;
+}
+td img
+{
+    display: inline;
+    padding: 0px;
+    place-content: top;
+    place-items: top;
+    margin: 0px ;
+    height: 25vh;
+}
+td a
+{
+    text-decoration: none;
+    background-color: rgb(221, 39, 39);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+}
+#Sign
+{
+    display: flex;
+    place-content: end;
+    place-items: end;
+    align-items: top;
+}
+#Sign td
+{
+    padding: 10px;
+}
+.head_content 
+{
+    display: grid;
+    margin-left: 5vw;
+    color: white;
+}
+.head_content h1
+{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 8vh;
+}
+.head_content p
+{
+    font-size: 4vh;
+}
+.head_content input
+{
+    background-color: transparent;
+    width: 25vw;
+    height: 5vh;
+    border: solid 1px white;
+    border-radius: 3px;
+}
+.start 
+{
+    display: inline;
+    background-color: rgb(228, 17, 17);
+    border-radius: 6px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+    transition-duration: 3s;
+
+}
+.start:hover
+{
+ background-color: transparent;
+ border: 2px white solid;
+ cursor: pointer;   
+}
+.mid_body
+{
+    display: flex;
+    padding: 10px;
+    place-content: center;
+    place-items: center;
+    align-items: center;
+}
+.card
+{
+    background-image: linear-gradient(to right bottom, #553288, #4c298d, #401f93, #2e1599, #08099f);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    width: 25vw;
+    height: 40vh;
+    margin: 10px;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 2vh 3vw 7vh 3vw;
+    font-size: 2vh;
+}
+.card_header
+{
+    display: grid;
+    place-content: right;
+    place-items: right;
+    align-items: center;
+}
+.FAQ
+{
+    padding: 10px;
+}
+.FAQ h1
+{
+    font-size: 4vw;
+    margin: 3vw;
+}
+.facts
+{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    margin: 2vh
+}
+.faq_ques
+{
+    margin: 0 0 0 0;
+    width: 70vw;
+    height: 8vh;
+    background-color: #0606ba78;
+    display: grid;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2vw;
+    /* place-content: center; */
+    align-items: center;
+    /* place-items: center; */
+}
+.faq_ques p
+{
+    margin: 1vw;
+    display: inline;
+}
+.faq_ques p img
+{
+    width: 30px;
+    height: 30px;
+    filter: brightness(10);
+    float: right;
+}
+.faq_answer
+{
+    font-size: 1vw ;
+    width: 70vw;
+    display: grid;
+    font-family: 'Merriweather Sans', sans-serif;
+    transition-duration: 5s;
+    background-color: #0606baa0;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    align-items: center;
+    padding: 3vh;
+    margin-left: 3vw ;
+    margin-right: 3vw ;
+}
+details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+@media screen and (max-width:800px)
+{
+    .small
+    {
+        display: none;
+    }
+    .card
+    {
+        width: 85%;
+        font-size: 2vh;
+    }
+    .mid_body
+    {
+        display: grid;
+        padding: 10px;
+        place-content: center;
+        place-items: center;
+        align-items: center;
+    }
+    .FAQ h1 
+    {
+        font-size: 3vw;
+    }
+}
